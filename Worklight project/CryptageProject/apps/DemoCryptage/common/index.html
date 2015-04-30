@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>DemoCryptage</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+    		<link rel="stylesheet" href="css/main.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    	</head>
+    	<body style="display: none;">
+    		<!--application UI goes here-->
+    		<div id="appBody">
+    			<div align="center">Demo</div>
+    			<label for="ID">ID :</label><br>
+    			<input type="text" value="1234" style="width:100%" id="ID">
+    			<label for="device2adapter">Text to send to server :</label><br>
+    			<textarea rows="4" style="width:100%" id="device2adapter"></textarea>
+    			<input type="button" id="send" value="Send Data" style="width:100%"><br>
+    			<label for="adapter2device">Text received from the server :</label><br>
+    			<textarea rows="4" style="width:100%" id="adapter2device" readonly="readonly"></textarea>
+    		</div>
+    		<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    		
+    		
+    		<script src="js/aes/AES_Encryption-impl.js"></script>
+    		<script src="js/aes/AES_PSWGeneration-impl.js"></script>
+    		<script src="js/rsa/RSA_Encryption-impl.js"></script>
+    		<script src="js/rsa/RSA_KeyGeneration-impl.js"></script>
+    		<script src="js/SendRetreiveData.js"></script>
+    		
+    	</body>
+</html>

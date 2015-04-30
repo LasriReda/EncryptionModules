@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="CryptageProject">
+        <wb-resource deploy-path="/" source-path="/apps/RSA_encryption/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/DemoCryptage/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/DemoCryptage/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/test/common"/>
+        <property name="context-root" value="CryptageProject"/>
+    </wb-module>
+</project-modules>

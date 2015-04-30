@@ -1,0 +1,62 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DemoCryptage</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		 WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "DemoCryptage",
+   "APP_ID": "DemoCryptage",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1923165143",
+   "WORKLIGHT_PLATFORM_VERSION": "6.3.0.0",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/DemoCryptage\/android\/"
+};
+</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>window.$ = window.jQuery = WLJQ;</script>
+    </head>
+    <body style="display: none;">
+    		<!--application UI goes here-->
+        <div id="appBody">
+            <div align="center">Demo</div>
+            <label for="ID">ID :</label>
+            <br>
+            <input id="ID" style="width:100%" type="text" value="1234">
+    			<label for="device2adapter">Text to send to server :</label>
+            <br>
+            <textarea id="device2adapter" rows="4" style="width:100%"></textarea>
+    			<input id="send" style="width:100%" type="button" value="Send Data">
+            <br>
+            <label for="adapter2device">Text received from the server :</label>
+            <br>
+            <textarea id="adapter2device" readonly rows="4" style="width:100%"></textarea>
+        </div>
+        <script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    		<script src="js/aes/AES_Encryption-impl.js"></script>
+    		<script src="js/aes/AES_PSWGeneration-impl.js"></script>
+    		<script src="js/rsa/RSA_Encryption-impl.js"></script>
+    		<script src="js/rsa/RSA_KeyGeneration-impl.js"></script>
+    		<script src="js/SendRetreiveData.js"></script>
+    </body>
+</html>
