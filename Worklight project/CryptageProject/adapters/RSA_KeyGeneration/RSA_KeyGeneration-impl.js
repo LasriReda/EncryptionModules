@@ -20,7 +20,7 @@ function checkDevice(id){
 	if(testDB.isSuccessful)
 		return {pubkey : RSA_PubKey};
 	else
-		return {pubkey : "error"};
+		return {pubkey : "error", info : testDB};
 }
 
 /*  

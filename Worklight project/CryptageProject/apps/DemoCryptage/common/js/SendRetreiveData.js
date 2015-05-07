@@ -46,7 +46,6 @@ function getPublicKeySuccess(result){
 		WL.Logger.debug("sending the encrypted data and the encrypted secret key");
 		sendEncryptedData(cypherText,encryptedSKey);
 	}
-
 	else {
 		busyIndicator.hide();
 		alert("error !");
